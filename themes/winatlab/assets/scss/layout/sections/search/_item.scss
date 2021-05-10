@@ -1,0 +1,42 @@
+.search_page {
+
+    &__list {
+
+        &-item {
+            background-color: #fff;
+            position: relative;
+            min-height: 90px;
+            padding: 15px 25px;
+            @include _flexbox();
+            @include _align-items(center);
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 1.4;
+            color: #141316;
+
+            @include media(md){
+                min-height: 57px;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 12px 50px 12px 16px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 10px;
+                border: 18px solid transparent;
+                border-left: 17px solid $background-blue;
+
+                @include media(md){
+                    border-width: 10px;
+                    border-left-width: 10px;
+                    right: 4px;
+                }
+            }
+
+        }
+
+    }
+
+}

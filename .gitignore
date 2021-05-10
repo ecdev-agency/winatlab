@@ -1,0 +1,9 @@
+cache
+/cache
+
+themes/winatlab/.idea
+themes/winatlab/node_modules
+themes/winatlab/node_modules/*
+themes/winatlab/yarn-error.log
+themes/winatlab/package-lock.json
+themes/winatlab/yarn.lock
