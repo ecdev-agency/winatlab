@@ -19,15 +19,20 @@ const Build = function () {
                     video   = $this.data('video'),
                     iframe = document.createElement('iframe');
 
-            iframe.src      = video + '?enablejsapi=1&origin=' + window.location.origin + '&autoplay=1&mute=1';
+            var url = video.replace("watch?v=", "embed/"),
+                url = url.replace("vimeo.com/", "player.vimeo.com/video/");
+
+            iframe.src      = url + '?enablejsapi=1&origin=' + window.location.origin + '&autoplay=1&mute=1';
             iframe.width    = '100%';
             iframe.height   = '400';
             iframe.allowFullscreen   = true;
+
             iframe.allow   = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
 
             $this.html(iframe);
 
             $this.removeClass('videoPsevdoLink');
+
 
 
         });
