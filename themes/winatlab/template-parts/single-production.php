@@ -9,8 +9,32 @@
 
 get_header();
 
-?>
+$flexible = get_field( 'flexible', get_the_ID() );
 
+if( $flexible ) :
+    ?>
+    <!-- Build -->
+    <div class="build <?= get_field( 'flexible_class', get_the_ID() ) ?> padding-top-<?= get_field( 'flexible_padding_top', get_the_ID() ) ?>">
+
+        <?php
+        foreach ($flexible as $item) :
+            get_template_part(
+                'template-parts/flexible/_flexible',
+                $item['acf_fc_layout'],
+                [
+                    'field' => $item
+                ]
+            );
+        endforeach;
+        ?>
+
+    </div>
+    <!-- Build -->
+    <?php
+
+else:
+
+   ?>
     <!-- News -->
     <div class="news__single">
 
@@ -46,6 +70,8 @@ get_header();
 
     </div>
     <!-- News -->
+    <?php
 
-<?php
+endif;
+
 get_footer();

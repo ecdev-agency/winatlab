@@ -49,7 +49,7 @@ $field = $args['field'];
 
                                 <!-- title -->
                                 <a href="<?= $item['link']['url'] ?>" class="partners__list-item--title">
-                                    <?= $item['link']['title'] ?>
+                                    <?= $item['link_title'] ?>
                                 </a>
                                 <!-- end title -->
 

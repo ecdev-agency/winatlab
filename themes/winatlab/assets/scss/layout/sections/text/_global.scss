@@ -1,0 +1,8 @@
+.text_page {
+    padding: 82px 0 82px 0;
+
+    @include media(md) {
+        padding: 48px 0 0px 0;
+    }
+
+}

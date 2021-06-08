@@ -500,6 +500,96 @@
 
   }
 
+  &__template {
+
+    &__column {
+
+      .flexible_text{
+        &-content {
+          img {
+            &:not(.nofullwidth) {
+              max-width: 402px;
+              @include media(md){
+                max-width: 220px;
+                margin: 0 auto 0px auto;
+              }
+            }
+
+          }
+          h1 {
+            margin: 0 0 20px 0;
+            font-weight: bold;
+            position: relative;
+            @include media(md){
+              margin: -12px 0 15px 0;
+            }
+            strong {
+              display: block;
+              @include media(md){
+                display: block !important;
+              }
+            }
+          }
+          h5 {
+            margin: 0 0 12px 0;
+          }
+
+
+          .font {
+            &-500 {
+              font-weight: 500;
+            }
+            &-700 {
+              font-weight: 700;
+            }
+          }
+
+          .text {
+            padding-top: 10px;
+
+            strong {
+              @include media(md){
+                font-weight: 500;
+              }
+            }
+
+            &-h5, &-h5 * {
+              @include media(md){
+                font-size: 20px !important;
+                margin: 0;
+              }
+            }
+
+            &-small, &-small * {
+              @include media(md){
+                font-size: 16px !important;
+                margin: 0 0 16px 0;
+              }
+            }
+
+          }
+          .text,
+          .text *{
+            line-height: 44px;
+          }
+
+        }
+      }
+
+      .flexible_image-item{
+        &.left {
+          padding-top: 50px;
+          @include media(md){
+            padding-top: 0;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
 }
 
 

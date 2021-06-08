@@ -1,11 +1,71 @@
 .flexible_video {
 
+    &.margin {
+        &__bottom {
+            &-50 {
+                margin-bottom: 50px;
+                @include media(md) {
+                    margin-bottom: 35px;
+                }
+            }
+            &-70 {
+                margin-bottom: 70px;
+                @include media(md) {
+                    margin-bottom: 35px;
+                }
+            }
+            &-100 {
+                margin-bottom: 100px;
+                @include media(md) {
+                    margin-bottom: 60px;
+                }
+            }
+            &-120 {
+                margin-bottom: 120px;
+                @include media(md) {
+                    margin-bottom: 90px;
+                }
+            }
+            &-130 {
+                margin-bottom: 130px;
+                @include media(md) {
+                    margin-bottom: 40px;
+                }
+            }
+            &-140 {
+                margin-bottom: 110px;
+                @include media(md) {
+                    margin-bottom: 90px;
+                }
+            }
+        }
+    }
+
     &-content {
         padding: 10px 0 0 0;
         @include media(md) {
             padding: 0;
             text-align: center;
             margin: 0 0 26px 0;
+        }
+
+        &--image {
+            margin: 0 0 40px 0;
+            @include media(md){
+                margin: 0 0 20px 0;
+            }
+            img {
+                $size: 120px;
+                width: $size;
+                height: $size;
+                border-radius: 50%;
+                margin: 0 auto;
+                @include media(md){
+                    $size: 90px;
+                    width: $size;
+                    height: $size;
+                }
+            }
         }
 
         &--title {
@@ -19,6 +79,18 @@
                 color: $color-blue-light;
             }
 
+        }
+
+        &--title_text {
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2;
+            position: relative;
+            margin: -55px 0 78px 0;
+            @include media(md){
+                margin: -15px 0 30px 0;
+            }
         }
 
         &--video {
@@ -103,6 +175,20 @@
                 margin: 0;
                 padding: 0;
             }
+        }
+
+        &--button {
+            text-align: center;
+            padding: 85px 0 0 0;
+            @include media(md){
+                padding: 30px 0 0 0;
+            }
+
+            .btn {
+                min-width: 218px;
+                min-height: 60px;
+            }
+
         }
 
     }

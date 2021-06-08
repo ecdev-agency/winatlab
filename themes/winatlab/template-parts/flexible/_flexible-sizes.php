@@ -20,7 +20,7 @@ $field = $args['field'];
 <?php endif; ?>
 
                 <!-- row -->
-                <div class="flexible_sizes__row">
+                <div class="flexible_sizes__row <?= (count($field['list']) > 4) ? 'five' : '' ?>">
 
                     <!-- left -->
                     <div class="flexible_sizes__row-left">
@@ -35,7 +35,7 @@ $field = $args['field'];
                                         <div class="flexible_sizes__list-item">
 
                                             <!-- icon -->
-                                            <div class="icon">
+                                            <div class="icon" style="background-color: <?= $item['background'] ?>">
 
                                                 <?php if( $item['image'] ) : ?>
                                                     <img src="<?= $item['image'] ?>" alt="<?= get_bloginfo('name') ?>" title="<?= get_bloginfo('name') ?>">

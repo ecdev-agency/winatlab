@@ -267,10 +267,6 @@ get_header();
                             <!-- content -->
                             <div class="news__page-subscribe--content">
 
-                                <h2 class="news__page-subscribe--title">
-                                    <?= _e( 'Inscrivez-vous à <span>Notre newsletter</span>' ) ?>
-                                </h2>
-
                                 <?php echo do_shortcode( '[contact-form-7 id="241" title="Inscrivez-vous à Notre newsletter" html_class="news__page-subscribe--form"]' ); ?>
 
                             </div>
@@ -347,29 +343,34 @@ get_header();
                     <!-- Sidebar > Right -->
                     <div class="news__page-sidebar--right">
 
+                        <?php
+                        if( get_field( 'enable', 'news_settings' ) ) :
+                        ?>
                         <!-- Banner -->
                         <div class="news__page-banner">
 
                             <!-- Title -->
                             <h2 class="news__page-banner--title">
-                                <?= _e( 'Télécharger <span>notre brochure<span>', 'winatlab' ) ?>
+                                <?= get_field( 'title', 'news_settings' ) ?>
                             </h2>
                             <!-- End Title -->
 
                             <!-- Button -->
-                            <a href="" class="btn">
-                                <?= _e( 'Cliquez-ici', 'winatlab' ) ?>
+                            <a href="<?= get_field( 'button_file', 'news_settings' ) ?>" class="btn" target="_blank">
+                                <?= get_field( 'button_title', 'news_settings' ) ?>
                             </a>
                             <!-- End Button -->
 
                             <img
-                                    src="<?= TEMPLATE_PATH . '/assets/images/news-banner.png' ?>"
+                                    src="<?= get_field( 'image', 'news_settings' ) ?>"
                                     alt="<?= get_bloginfo('name') ?>"
                                     title="<?= get_bloginfo('name') ?>"
                             >
 
                         </div>
                         <!-- End Banner -->
+
+                        <?php endif; ?>
 
                     </div>
                     <!-- End Sidebar > Right -->

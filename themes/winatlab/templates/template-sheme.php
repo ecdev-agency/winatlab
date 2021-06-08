@@ -53,7 +53,7 @@ $field = get_field( 'shpage', get_the_ID() );
 
                                                     <div>
                                                         <small><?= _e( 'Phase', 'winatlab' ) ?> <?= $i ?></small>
-                                                        <span><?= $item['link']['title'] ?></span>
+                                                        <span><?= $item['link_title'] ?></span>
                                                     </div>
 
                                                 </a>
@@ -72,7 +72,7 @@ $field = get_field( 'shpage', get_the_ID() );
 
                                                     <div>
                                                         <small><?= _e( 'Phase', 'winatlab' ) ?> <?= $i ?></small>
-                                                        <span><?= $item['link']['title'] ?></span>
+                                                        <span><?= $item['link_title'] ?></span>
                                                     </div>
 
                                                 </div>

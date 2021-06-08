@@ -20,6 +20,12 @@
                     margin-bottom: 60px;
                 }
             }
+            &-110 {
+                margin-bottom: 110px;
+                @include media(md) {
+                    margin-bottom: 60px;
+                }
+            }
             &-120 {
                 margin-bottom: 120px;
                 @include media(md) {

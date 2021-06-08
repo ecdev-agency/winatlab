@@ -12,7 +12,7 @@ $field = $args['field'];
     get_template_part('template-parts/pages/home/_home',
         'sheme',
         [
-            'page_id'         => get_option('page_on_front'),
+            'page_id'         => get_the_ID(),
             'title'           => $field['title'],
             'button'          => $field['button'],
             'list'            => $field['list'],

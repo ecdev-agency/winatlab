@@ -35,6 +35,21 @@ if (function_exists('acf_add_options_page')) {
         'parent_slug'   => 'edit.php?post_type=production',
     ));
 
+    /**
+     * News Settings
+     */
+    acf_add_options_page(array(
+        'page_title'    => __('News Settings', 'winatlab'),
+        'menu_title'    => __('News Settings', 'winatlab'),
+        'menu_slug'     => 'news_settings',
+        'capability'    => 'edit_posts',
+        'position'      => '15.54',
+        'post_id'       => 'news_settings',
+        'icon_url'      => 'dashicons-schedule',
+        'redirect'      => false,
+        'parent_slug'   => 'edit.php?post_type=news',
+    ));
+
 }
 
 /**

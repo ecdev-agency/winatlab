@@ -5,7 +5,7 @@ $field = $args['field'];
 $button = $field['button'];
 ?>
 
-<?php if( ! empty( $field['content'] ) ) : ?>
+<?php //if( ! empty( $field['content'] ) ) : ?>
 
     <!-- Section -->
     <section class="flexible_text margin__bottom-<?= $field['margin_bottom'] ?> <?= $field['class'] ?>" <?= ($field['id']) ? 'id="' . $field['id'] . '"' : '' ?> >
@@ -23,7 +23,7 @@ $button = $field['button'];
 
                     <?php if( ! empty( $field['title'] ) ) : ?>
                         <!-- Title -->
-                        <h2 class="flexible_text-title">
+                        <h2 class="flexible_text-title <?= (!empty( $field['title_size'] )) ? 'title-size-'.$field['title_size'] : '' ?>">
                             <?= $field['title'] ?>
                         </h2>
                         <!-- End Title -->
@@ -55,4 +55,4 @@ $button = $field['button'];
     </section>
     <!-- End Section -->
 
-<?php endif; ?>
+<?php //endif; ?>

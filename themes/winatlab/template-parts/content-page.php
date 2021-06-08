@@ -23,7 +23,6 @@ elseif(is_page('blog')) :
 	 */
 	get_template_part( 'template-parts/pages/_page', 'blog' );
 else:
-    echo 'TESTSTSTS';
     /*
      * Page: Text
      */

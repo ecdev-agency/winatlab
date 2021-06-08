@@ -8,6 +8,12 @@
 
     &.margin {
         &__bottom {
+            &-0 {
+                margin-bottom: 0px;
+                @include media(md) {
+
+                }
+            }
             &-10 {
                 margin-bottom: 10px;
                 @include media(md) {
@@ -264,6 +270,25 @@
         @include media(md) {
             margin: 0 0 32px 0;
         }
+
+        &.title{
+            &-size{
+                &-60{
+                    font-size: 60px;
+                    @include media(md){
+                        font-size: 32px;
+                    }
+                }
+                &-70{
+                    font-size: 70px;
+                    @include media(md){
+                        font-size: 32px;
+                    }
+                }
+
+            }
+        }
+
     }
 
     &.introtext {
@@ -293,6 +318,12 @@
             @include media(lg) {
                 display: block;
             }
+        }
+    }
+
+    &.template_text {
+        @include media(md){
+            margin-bottom: 15px !important;
         }
     }
 

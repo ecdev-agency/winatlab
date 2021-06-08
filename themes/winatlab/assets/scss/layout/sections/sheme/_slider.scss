@@ -60,12 +60,14 @@
         }
 
         &--right {
+          padding-top: 26px;
           @include _flexbox();
           @include _justify-content(flex-end);
           @include _flex-direction(column);
           @include _align-items(flex-end);
           @include media(md) {
             margin-bottom: 65px;
+            padding-top: 0px;
           }
         }
 

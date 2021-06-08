@@ -27,11 +27,14 @@ $field = $args['field'];
                 <?php endif; ?>
 
                 <?php
+                $team = $field['list'];
+
                 $team = new WP_Query(
                     [
-                        'posts_per_page'    => $field['count'],
+                        'posts_per_page'    => -1,
                         'post_type'         => 'team',
                         'post_status'       => 'publish',
+                        'post__in'          => $team,
                     ]
                 );
                 if( $team->have_posts() ) :

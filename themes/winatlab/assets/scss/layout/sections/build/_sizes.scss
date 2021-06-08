@@ -132,6 +132,127 @@
 
         }
 
+        &.five {
+            .flexible_sizes{
+                &__row{
+                    &-left,
+                    &-right {
+                        width: auto;
+                        @include media(md) {
+                            width: 100%;
+                        }
+                    }
+                }
+                &__list {
+                    flex-wrap: unset;
+
+                    @include media(md) {
+                        width: 100%;
+                        @include _justify-content(space-between);
+                    }
+
+                    > li {
+
+                        &:nth-child(1) {
+                            @include media(md) {
+                                padding-right: 0;
+                            }
+                            .icon {
+                                $size: 51px;
+
+                                width: $size;
+                                height: $size;
+
+                                @include media(md) {
+                                    $size: 30px;
+
+                                    width: $size;
+                                    height: $size;
+                                }
+
+                            }
+
+                        }
+
+                        &:nth-child(2) {
+                            .icon {
+                                $size: 69px;
+
+                                width: $size;
+                                height: $size;
+
+                                @include media(md) {
+                                    $size: 40px;
+
+                                    width: $size;
+                                    height: $size;
+                                }
+
+                            }
+
+                        }
+
+                        &:nth-child(3) {
+                            .icon {
+                                $size: 100px;
+
+                                width: $size;
+                                height: $size;
+
+                                @include media(md) {
+                                    $size: 50px;
+
+                                    width: $size;
+                                    height: $size;
+                                }
+
+                            }
+
+                        }
+
+                        &:nth-child(4) {
+                            .icon {
+                                $size: 135px;
+
+                                width: $size;
+                                height: $size;
+
+                                @include media(md) {
+                                    $size: 60px;
+
+                                    width: $size;
+                                    height: $size;
+                                }
+
+                            }
+
+                        }
+
+                        &:nth-child(5) {
+                            .icon {
+                                $size: 172px;
+
+                                width: $size;
+                                height: $size;
+
+                                @include media(md) {
+                                    $size: 70px;
+
+                                    width: $size;
+                                    height: $size;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
     }
 
     &__title {
@@ -159,7 +280,7 @@
 
             &:nth-child(odd) {
                 .icon {
-                    background-color: #39A4F5;
+                    //background-color: #39A4F5;
                 }
             }
 
@@ -241,7 +362,7 @@
                 @include _flexbox();
                 @include _align-items(center);
                 @include _justify-content(center);
-                background-color: $background-blue;
+                //background-color: $background-blue;
                 margin: 0 auto;
                 @include media(lg) {
                     $size: 140px;
@@ -282,6 +403,7 @@
                     font-size: 12px;
                     margin-top: 15px;
                 }
+
             }
 
         }

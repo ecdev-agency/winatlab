@@ -7,7 +7,7 @@ $field = $args['field'];
 
 <?php if( ! $args['column'] ) : ?>
 <!-- Section -->
-<section class="flexible_video">
+<section class="flexible_video margin__bottom-<?= $field['margin_bottom'] ?> <?= $field['class'] ?>">
 
     <!-- container -->
     <div class="container-fluid">
@@ -22,12 +22,28 @@ $field = $args['field'];
     <!-- Content -->
     <div class="flexible_video-content">
 
+        <?php if( !empty( $field['title_image'] ) ) : ?>
+            <!-- Image -->
+            <div class="flexible_video-content--image">
+                <?= kama_thumb_img( 'w=120 &h=120 &attach_id=' . $field['title_image'] ) ?>
+            </div>
+            <!-- End Image -->
+        <?php endif; ?>
+
         <?php if( !empty( $field['title'] ) ) : ?>
             <!-- Title -->
             <h2 class="flexible_video-content--title">
                 <?= $field['title'] ?>
             </h2>
             <!-- End Title -->
+        <?php endif; ?>
+
+        <?php if( !empty( $field['title_text'] ) ) : ?>
+            <!-- Text -->
+            <div class="flexible_video-content--title_text">
+                <?= $field['title_text'] ?>
+            </div>
+            <!-- End Text -->
         <?php endif; ?>
 
         <!-- Video -->
@@ -49,6 +65,18 @@ $field = $args['field'];
 
             </div>
             <!-- End Footer -->
+        <?php endif; ?>
+
+        <?php if( ! empty( $field['button'] ) ) : ?>
+            <!-- Button -->
+            <div class="flexible_video-content--button">
+
+                <a href="<?= $field['button']['url'] ?>" class="btn">
+                    <?= $field['button_title'] ?>
+                </a>
+
+            </div>
+            <!-- End Button -->
         <?php endif; ?>
 
     </div>

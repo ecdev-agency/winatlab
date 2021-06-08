@@ -342,6 +342,7 @@ const HomePage = function () {
             loop            : false,
             slidesPerView   : 1,
             spaceBetween    : 30,
+            centerInsufficientSlides: true,
             pagination: {
                 el          : '.partners__slider .swiper-pagination',
                 clickable   : true,

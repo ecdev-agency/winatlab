@@ -1,0 +1,14 @@
+.flexible_button {
+    padding: 0 0 80px 0;
+
+    &__inner {
+        text-align: center;
+
+        .btn {
+            min-width: 218px;
+            min-height: 60px;
+        }
+
+    }
+
+}
