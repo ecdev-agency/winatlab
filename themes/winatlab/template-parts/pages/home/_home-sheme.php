@@ -72,13 +72,16 @@ defined( 'ABSPATH' ) || exit;
 
                                 <?php $i=1; foreach ( $list as $item ) : ?>
 
+                                    <?php
+                                    //echo languageUrl($item['title']['url']);
+                                    ?>
+
                                     <?php if( $i == 1 ) : ?>
 
                                         <!-- Slide -->
                                         <div class="swiper-slide">
-
                                             <!-- Item -->
-                                            <a href="<?= $item['title']['url'] ?>" class="sheme__slider-item" data-step="<?= $i ?>">
+                                            <a href="<?php languageUrl($item['title']['url']); ?>" class="sheme__slider-item" data-step="<?= $i ?>">
 
                                                 <div>
                                                     <small><?= _e( 'Phase', 'winatlab' ) ?> <?= $i ?></small>
@@ -94,7 +97,7 @@ defined( 'ABSPATH' ) || exit;
                                     <?php else: ?>
 
                                         <!-- Slide -->
-                                        <a href="<?= $item['title']['url'] ?>" class="swiper-slide">
+                                        <a href="<?php languageUrl($item['title']['url']); ?>" class="swiper-slide">
 
                                             <!-- Item -->
                                             <div class="sheme__slider-item" data-step="<?= $i ?>">

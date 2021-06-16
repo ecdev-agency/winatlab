@@ -18,7 +18,7 @@ $field = $args['field'];
 
                 <!-- Inner -->
                 <div class="flexible_button__inner">
-                    <a href="<?= $field['url'] ?>" class="btn">
+                    <a href="<?php languageUrl($field['url']); ?>" class="btn">
                         <?= $field['title'] ?>
                     </a>
                 </div>

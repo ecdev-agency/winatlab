@@ -200,41 +200,46 @@ $field = get_field( 'shpage', get_the_ID() );
     </section>
     <!-- End Sheme Page -->
 
-    <!-- Sheme Page Form -->
-    <section class="sheme_page__form">
 
-        <!-- container -->
-        <div class="container-fluid">
+    <?php print_r($field['form_hide']); if( empty( $field['form_hide'] ) ) : ?>
+        <!-- Sheme Page Form -->
+        <section class="sheme_page__form">
 
-            <!-- row -->
-            <div class="row">
+            <!-- container -->
+            <div class="container-fluid">
 
-                <!-- col -->
-                <div class="col-sm-12">
+                <!-- row -->
+                <div class="row">
 
-                    <!-- Title -->
-                    <h2 class="sheme_page__form-title">
-                        <?= _e( 'Inscrivez-vous à <span>Notre newsletter<span>', 'winatlab' ) ?>
-                    </h2>
-                    <!-- End Title -->
+                    <!-- col -->
+                    <div class="col-sm-12">
 
-                    <!-- Form 377 -->
-                    <div class="sheme_page__form-form">
-                        <?= do_shortcode( '[contact-form-7 id="377" title="Inscrivez-vous à Notre newsletter (Sheme Page)" html_class=""]' ) ?>
+                        <?php if( ! empty( $field['form_title'] ) ) : ?>
+                        <!-- Title -->
+                        <h2 class="sheme_page__form-title">
+                            <?= $field['form_title'] ?>
+                        </h2>
+                        <!-- End Title -->
+                        <?php endif; ?>
+
+                        <!-- Form 377 -->
+                        <div class="sheme_page__form-form">
+                            <?= do_shortcode( '[contact-form-7 id="377" title="Inscrivez-vous à Notre newsletter (Sheme Page)" html_class=""]' ) ?>
+                        </div>
+                        <!-- End Form -->
+
                     </div>
-                    <!-- End Form -->
+                    <!-- end col -->
 
                 </div>
-                <!-- end col -->
+                <!-- end row -->
 
             </div>
-            <!-- end row -->
+            <!-- end container -->
 
-        </div>
-        <!-- end container -->
-
-    </section>
-    <!-- End Sheme Page Form -->
+        </section>
+        <!-- End Sheme Page Form -->
+    <?php endif; ?>
 
 <?php
 get_footer();

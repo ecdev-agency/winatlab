@@ -87,7 +87,18 @@
             font-weight: 500;
             font-size: 15px;
             line-height: 1.2;
-            color: $color-blue;
+            color: $color-black;
+
+            a {
+              color: $color-blue;
+
+              &:hover {
+                text-decoration: underline;
+
+              }
+
+            }
+
           }
         }
 

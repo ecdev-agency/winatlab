@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'wp_enqueue_scripts', 'winatlab_jquery' );
 function winatlab_jquery() {
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', TEMPLATE_PATH . '/assets/js/src/jquery/jquery.js', false, '3.4.1', false );
+    wp_register_script( 'jquery', TEMPLATE_PATH . '/assets/js/src/jquery/jquery.js', false, '3.4.2', false );
     wp_enqueue_script( 'jquery' );
 }
 /**
@@ -27,7 +27,7 @@ function winatlab_styles() {
 	 */
     wp_enqueue_style( 'fonts-ibm-winatlab', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap', [], null );
     wp_enqueue_style( 'fonts-karla-winatlab', 'https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap', [], null );
-    wp_enqueue_style( 'bundle-winatlab', TEMPLATE_PATH . '/assets/css/bundle.css', [], '2.4.3' );
+    wp_enqueue_style( 'bundle-winatlab', TEMPLATE_PATH . '/assets/css/bundle.css', [], '2.4.5' );
 
 
 }
@@ -45,7 +45,7 @@ function winatlab_scripts() {
 	 * @wp_enqueue_script
 	 */
 
-    wp_enqueue_script( 'bundle-frank', TEMPLATE_PATH . '/assets/js/bundle.js', ['jquery'], '1.1.3', true );
+    wp_enqueue_script( 'bundle-frank', TEMPLATE_PATH . '/assets/js/bundle.js', ['jquery'], '1.1.5', true );
 
 }
 

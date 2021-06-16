@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
                     <?php if( get_field( 'intro_link', $args['page_id'] ) ) : ?>
                         <!-- Link -->
-                        <a href="<?= get_field( 'intro_link', $args['page_id'] )['url'] ?>" class="btn intro__text-link">
+                        <a href="<?php languageUrl(get_field( 'intro_link', $args['page_id'] )['url']); ?>" class="btn intro__text-link">
                             <?= get_field( 'intro_link_title', $args['page_id'] ) ?>
                         </a>
                         <!-- End Link -->

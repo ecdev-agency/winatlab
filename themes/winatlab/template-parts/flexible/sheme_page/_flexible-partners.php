@@ -41,8 +41,8 @@ $field = $args['field'];
                             <div class="partners__list-item">
 
                                 <!-- title -->
-                                <a href="<?= $item['link']['url'] ?>" class="partners__list-item--title">
-                                    <?= $item['link']['title'] ?>
+                                <a href="<?= languageUrl($item['link']['url']) ?>" class="partners__list-item--title">
+                                    <?= $item['link_title'] ?>
                                 </a>
                                 <!-- end title -->
 
@@ -50,13 +50,13 @@ $field = $args['field'];
                                 <div class="partners__list-item--logo">
 
                                     <?php if( $item['logo_left_image'] ) : ?>
-                                        <a href="<?= $item['logo_left_link']['url'] ?>">
+                                        <a href="<?= languageUrl($item['logo_left_link']['url']) ?>">
                                             <?php echo wp_get_attachment_image($item['logo_left_image'], 'full', false, ['alt' => get_bloginfo('name'), 'title' => get_the_title()]); ?>
                                         </a>
                                     <?php endif; ?>
 
                                     <?php if( $item['logo_right_image'] ) : ?>
-                                        <a href="<?= $item['logo_right_link']['url'] ?>">
+                                        <a href="<?= languageUrl($item['logo_right_link']['url']) ?>">
                                             <?php echo wp_get_attachment_image($item['logo_right_image'], 'full', false, ['alt' => get_bloginfo('name'), 'title' => get_the_title()]); ?>
                                         </a>
                                     <?php endif; ?>

@@ -39,9 +39,9 @@ defined( 'ABSPATH' ) || exit;
                     <!-- End Title -->
 
                     <!-- Text -->
-                    <p class="search_page__header-text">
-                        <?= _e( 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt', 'winatlab' ) ?>
-                    </p>
+<!--                    <p class="search_page__header-text">-->
+<!--                        --><?//= _e( 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt', 'winatlab' ) ?>
+<!--                    </p>-->
                     <!-- End Text -->
 
                 </div>

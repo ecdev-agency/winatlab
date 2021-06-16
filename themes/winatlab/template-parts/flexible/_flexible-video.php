@@ -71,7 +71,7 @@ $field = $args['field'];
             <!-- Button -->
             <div class="flexible_video-content--button">
 
-                <a href="<?= $field['button']['url'] ?>" class="btn">
+                <a href="<?= languageUrl($field['button']['url']) ?>" class="btn">
                     <?= $field['button_title'] ?>
                 </a>
 

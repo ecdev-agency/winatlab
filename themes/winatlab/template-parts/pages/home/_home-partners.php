@@ -77,7 +77,7 @@ defined( 'ABSPATH' ) || exit;
                                         <div class="partners__list-item">
 
                                             <!-- title -->
-                                            <a href="<?= $item['link']['url'] ?>" class="partners__list-item--title">
+                                            <a href="<?php languageUrl($item['link']['url']); ?>" class="partners__list-item--title">
                                                 <?= $item['link_title'] ?>
                                             </a>
                                             <!-- end title -->
@@ -86,13 +86,13 @@ defined( 'ABSPATH' ) || exit;
                                             <div class="partners__list-item--logo">
 
                                                 <?php if( $item['logo_left_image'] ) : ?>
-                                                    <a href="<?= $item['logo_left_link']['url'] ?>">
+                                                    <a href="<?php languageUrl($item['logo_left_link']['url']); ?>">
                                                         <?php echo wp_get_attachment_image($item['logo_left_image'], 'full', false, ['alt' => get_bloginfo('name'), 'title' => get_the_title()]); ?>
                                                     </a>
                                                 <?php endif; ?>
 
                                                 <?php if( $item['logo_right_image'] ) : ?>
-                                                    <a href="<?= $item['logo_right_link']['url'] ?>">
+                                                    <a href="<?php languageUrl($item['logo_right_link']['url']); ?>">
                                                         <?php echo wp_get_attachment_image($item['logo_right_image'], 'full', false, ['alt' => get_bloginfo('name'), 'title' => get_the_title()]); ?>
                                                     </a>
                                                 <?php endif; ?>
@@ -132,7 +132,7 @@ defined( 'ABSPATH' ) || exit;
                     <!-- Link -->
                     <div class="partners__link">
 
-                        <a href="<?= get_field( 'partners_link', $args['page_id'] )['url'] ?>" class="btn">
+                        <a href="<?php languageUrl(get_field( 'partners_link', $args['page_id'] )['url']); ?>" class="btn">
                             <?= get_field( 'partners_link_title', $args['page_id'] ) ?>
                         </a>
 

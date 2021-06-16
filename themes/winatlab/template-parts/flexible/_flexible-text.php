@@ -34,7 +34,7 @@ $button = $field['button'];
                         <?= $field['content'];
 
                         echo (isset($button['url'])) ? sprintf('<div class="btnWrap"><a href="%1$s" target="%2$s" class="btn btn-alt">%3$s</a></div>',
-                            $button['url'],
+                             languageUrl($button['url']),
                             ($button['target']) ? $button['target'] : '_self',
                             $button['title']) : '';
                         ?>

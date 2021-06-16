@@ -13,7 +13,7 @@ $field = $args['field'];
 
         <!-- Footer -->
         <div class="sheme_page__flextext-footer">
-            <a href="<?= $field['button']['url'] ?>" class="btn"><?= $field['button']['title'] ?></a>
+            <a href="<?= languageUrl($field['button']['url']) ?>" class="btn"><?= $field['button']['title'] ?></a>
         </div>
         <!-- End Footer -->
 

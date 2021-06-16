@@ -17,6 +17,19 @@ jQuery(document).ready(function() {
             $(frm).find('input,button,select,textarea')
                 .removeAttr('disabled')
                 .removeAttr('checked');
+
+            setTimeout(function () {
+
+            if( $('.screen-reader-response li').length ) {
+
+                $('.wpcf7-response-output').html($('.screen-reader-response ul').clone()).ready(function(){
+                    $('.wpcf7-response-output .screen-reader-response').show();
+                });
+
+            }
+
+            }, 200);
+
         });
     });
 
