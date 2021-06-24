@@ -70,7 +70,7 @@ const AllPage = function () {
                 $(document).on('change', '#dynamic-select', function(e) {
                     const val = $(this).val();
 
-                    if( val === 'Partenariats' ) {
+                    if( val === 'Partenariats' || val === 'Partnership' ) {
                         $('.form .dynamic').show();
                     }else{
                         $('.form .dynamic').hide();

@@ -305,8 +305,10 @@ defined( 'ABSPATH' ) || exit;
                 <?php
                 if( array_key_exists('button', $args) ) :
                     if( $args['button'] ) :
+
+                        $url = languageUrl($args['button']['url'], 'return');
                         echo sprintf('<div class="sheme__footer"><a href="%s" class="btn">%s</a></div>',
-                            $args['button']['url'],
+                            $url,
                             $args['button']['title']
                         );
                     endif;

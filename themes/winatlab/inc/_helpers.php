@@ -15,7 +15,7 @@ function phone_replace($str) {
  * @param $url
  * @return array|mixed|string|string[]
  */
-function languageUrl($url) {
+function languageUrl($url, $return = '') {
 
     $domain = get_option('siteurl');
     $currentLang = wpm_get_language();
@@ -25,6 +25,8 @@ function languageUrl($url) {
         $url = $domain . '/' . $currentLang . $url_end;
     endif;
 
+    if( $return === 'return' ) return $url;
+    
     echo $url;
 
 }

@@ -90,7 +90,11 @@ defined( 'ABSPATH' ) || exit;
                                             ?>
                                                 <!-- Item > Cat -->
                                                 <p class="news__list-item--category">
-                                                    <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                    <?php
+                                                        $currentLang    = wpm_get_language();
+                                                        $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                    ?>
+                                                    <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                 </p>
                                                 <!-- End Item > Cat -->
                                             <?php endif; ?>

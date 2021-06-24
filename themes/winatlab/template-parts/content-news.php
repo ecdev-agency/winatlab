@@ -64,7 +64,11 @@ get_header();
                                                 ?>
                                                 <!-- Item > Cat -->
                                                 <p class="news__list-item--category">
-                                                    <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                    <?php
+                                                    $currentLang    = wpm_get_language();
+                                                    $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                    ?>
+                                                    <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                 </p>
                                                 <!-- End Item > Cat -->
                                             <?php endif; ?>
@@ -125,7 +129,11 @@ get_header();
                                                     ?>
                                                     <!-- Item > Cat -->
                                                     <p>
-                                                        <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                        <?php
+                                                        $currentLang    = wpm_get_language();
+                                                        $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                        ?>
+                                                        <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                     </p>
                                                     <!-- End Item > Cat -->
                                                 <?php endif; ?>
@@ -177,7 +185,11 @@ get_header();
                                                     ?>
                                                     <!-- Item > Cat -->
                                                     <p>
-                                                        <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                        <?php
+                                                        $currentLang    = wpm_get_language();
+                                                        $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                        ?>
+                                                        <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                     </p>
                                                     <!-- End Item > Cat -->
                                                 <?php endif; ?>
@@ -242,7 +254,11 @@ get_header();
                                                 ?>
                                                 <!-- Item > Cat -->
                                                 <p class="news__list-item--category">
-                                                    <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                    <?php
+                                                    $currentLang    = wpm_get_language();
+                                                    $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                    ?>
+                                                    <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                 </p>
                                                 <!-- End Item > Cat -->
                                             <?php endif; ?>
@@ -261,6 +277,7 @@ get_header();
                     <!-- Sidebar > Right -->
                     <div class="news__page-sidebar--right">
 
+                        <?php if( ! get_field( 'enable_newsletter', 'news_settings' ) ) : ?>
                         <!-- Subscribe -->
                         <div class="news__page-subscribe">
 
@@ -274,6 +291,7 @@ get_header();
 
                         </div>
                         <!-- End Subscribe -->
+                        <?php endif; ?>
 
                     </div>
                     <!-- End Sidebar > Right -->
@@ -324,7 +342,11 @@ get_header();
                                                 ?>
                                                 <!-- Item > Cat -->
                                                 <p class="news__list-item--category">
-                                                    <em><?= $cat[0]->name ?></em> - <?= __( 'Temps de lecture' ) ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
+                                                    <?php
+                                                    $currentLang    = wpm_get_language();
+                                                    $title_reader = ($currentLang == 'fr') ? 'Temps de lecture' : 'Reading time';
+                                                    ?>
+                                                    <em><?= $cat[0]->name ?></em> - <?= $title_reader ?> <?= winatlab_estimated_reading_time(get_the_ID()) ?>
                                                 </p>
                                                 <!-- End Item > Cat -->
                                             <?php endif; ?>

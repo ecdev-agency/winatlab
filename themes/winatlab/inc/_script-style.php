@@ -27,7 +27,7 @@ function winatlab_styles() {
 	 */
     wp_enqueue_style( 'fonts-ibm-winatlab', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap', [], null );
     wp_enqueue_style( 'fonts-karla-winatlab', 'https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap', [], null );
-    wp_enqueue_style( 'bundle-winatlab', TEMPLATE_PATH . '/assets/css/bundle.css', [], '2.4.5' );
+    wp_enqueue_style( 'bundle-winatlab', TEMPLATE_PATH . '/assets/css/bundle.css', [], '2.4.6' );
 
 
 }
@@ -45,7 +45,7 @@ function winatlab_scripts() {
 	 * @wp_enqueue_script
 	 */
 
-    wp_enqueue_script( 'bundle-frank', TEMPLATE_PATH . '/assets/js/bundle.js', ['jquery'], '1.1.5', true );
+    wp_enqueue_script( 'bundle-winatlab', TEMPLATE_PATH . '/assets/js/bundle.js', ['jquery'], '1.1.6', true );
 
 }
 

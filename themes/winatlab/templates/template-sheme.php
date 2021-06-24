@@ -49,7 +49,7 @@ $field = get_field( 'shpage', get_the_ID() );
                                             <div class="swiper-slide">
 
                                                 <!-- Item -->
-                                                <a href="<?= $item['link']['url'] ?>" class="sheme__slider-item" data-step="<?= $i ?>">
+                                                <a href="<?php languageUrl($item['link']['url']); ?>" class="sheme__slider-item" data-step="<?= $i ?>">
 
                                                     <div>
                                                         <small><?= _e( 'Phase', 'winatlab' ) ?> <?= $i ?></small>
@@ -65,7 +65,7 @@ $field = get_field( 'shpage', get_the_ID() );
                                         <?php else: ?>
 
                                             <!-- Slide -->
-                                            <a href="<?= $item['link']['url'] ?>" class="swiper-slide">
+                                            <a href="<?php languageUrl($item['link']['url']); ?>" class="swiper-slide">
 
                                                 <!-- Item -->
                                                 <div class="sheme__slider-item" data-step="<?= $i ?>">
@@ -90,11 +90,11 @@ $field = get_field( 'shpage', get_the_ID() );
 
                                 <!-- Buttons -->
                                 <?php if( $field['prev_page'] ) : ?>
-                                    <a href="<?= $field['prev_page']['url'] ?>" class="swiper-button-linkprev"></a>
+                                    <a href="<?php languageUrl($field['prev_page']['url']); ?>" class="swiper-button-linkprev"></a>
                                 <?php endif; ?>
 
                                 <?php if( $field['next_page'] ) : ?>
-                                    <a href="<?= $field['next_page']['url'] ?>" class="swiper-button-linknext"></a>
+                                    <a href="<?php languageUrl($field['next_page']['url']); ?>" class="swiper-button-linknext"></a>
                                 <?php endif; ?>
                                 <!-- End Buttons -->
 

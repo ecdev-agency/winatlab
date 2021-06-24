@@ -447,7 +447,104 @@
     "_flexible_1_content_4_poster": {},
     "_flexible_2_content_4_poster": {},
     "_flexible_3_content_4_poster": {},
-    "_flexible_4_content_4_poster": {}
+    "_flexible_4_content_4_poster": {},
+
+    "shpage_image": {},
+    "_shpage_image": {},
+
+    "shpage_flexible_0_image": {},
+    "shpage_flexible_1_image": {},
+    "shpage_flexible_2_image": {},
+    "shpage_flexible_3_image": {},
+    "shpage_flexible_4_image": {},
+
+    "_shpage_flexible_0_image": {},
+    "_shpage_flexible_1_image": {},
+    "_shpage_flexible_2_image": {},
+    "_shpage_flexible_3_image": {},
+    "_shpage_flexible_4_image": {},
+
+    "flexible_0_content_0_list_0_image": {},
+    "flexible_1_content_0_list_0_image": {},
+    "flexible_2_content_0_list_0_image": {},
+    "flexible_3_content_0_list_0_image": {},
+
+    "flexible_0_content_1_list_0_image": {},
+    "flexible_1_content_1_list_0_image": {},
+    "flexible_2_content_1_list_0_image": {},
+    "flexible_3_content_1_list_0_image": {},
+
+    "flexible_0_content_2_list_0_image": {},
+    "flexible_1_content_2_list_0_image": {},
+    "flexible_2_content_2_list_0_image": {},
+    "flexible_3_content_2_list_0_image": {},
+
+    "flexible_0_content_3_list_0_image": {},
+    "flexible_1_content_3_list_0_image": {},
+    "flexible_2_content_3_list_0_image": {},
+    "flexible_3_content_3_list_0_image": {},
+
+    "flexible_0_content_4_list_0_image": {},
+    "flexible_1_content_4_list_0_image": {},
+    "flexible_2_content_4_list_0_image": {},
+    "flexible_3_content_4_list_0_image": {},
+
+
+    "flexible_0_content_0_list_1_image": {},
+    "flexible_1_content_0_list_1_image": {},
+    "flexible_2_content_0_list_1_image": {},
+    "flexible_3_content_0_list_1_image": {},
+
+    "flexible_0_content_1_list_2_image": {},
+    "flexible_1_content_1_list_2_image": {},
+    "flexible_2_content_1_list_2_image": {},
+    "flexible_3_content_1_list_2_image": {},
+
+    "flexible_0_content_2_list_3_image": {},
+    "flexible_1_content_2_list_3_image": {},
+    "flexible_2_content_2_list_3_image": {},
+    "flexible_3_content_2_list_3_image": {},
+
+    "flexible_0_content_3_list_4_image": {},
+    "flexible_1_content_3_list_4_image": {},
+    "flexible_2_content_3_list_4_image": {},
+    "flexible_3_content_3_list_4_image": {},
+
+    "flexible_0_content_4_list_5_image": {},
+    "flexible_1_content_4_list_5_image": {},
+    "flexible_2_content_4_list_5_image": {},
+    "flexible_3_content_4_list_5_image": {},
+
+    "flexible_2_content_1_list_0_image" : {},
+    "flexible_2_content_1_list_1_image" : {},
+    "flexible_2_content_1_list_2_image" : {},
+    "flexible_2_content_1_list_3_image" : {},
+    "flexible_2_content_1_list_4_image" : {},
+
+    "flexible_2_content_2_list_0_image" : {},
+    "flexible_2_content_2_list_1_image" : {},
+    "flexible_2_content_2_list_2_image" : {},
+    "flexible_2_content_2_list_3_image" : {},
+    "flexible_2_content_2_list_4_image" : {},
+
+    "flexible_2_content_3_list_0_image" : {},
+    "flexible_2_content_3_list_1_image" : {},
+    "flexible_2_content_3_list_2_image" : {},
+    "flexible_2_content_3_list_3_image" : {},
+    "flexible_2_content_3_list_4_image" : {},
+
+    "flexible_2_content_4_list_0_image" : {},
+    "flexible_2_content_4_list_1_image" : {},
+    "flexible_2_content_4_list_2_image" : {},
+    "flexible_2_content_4_list_3_image" : {},
+    "flexible_2_content_4_list_4_image" : {},
+
+    "flexible_4_list_0_image": {},
+    "flexible_4_list_1_image": {},
+    "flexible_4_list_2_image": {},
+    "flexible_4_list_3_image": {},
+    "flexible_4_list_4_image": {}
+
   },
   "taxonomies": {
     "category" : {},
