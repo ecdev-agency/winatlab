@@ -26,12 +26,13 @@ get_header();
                 <div class="news__page-sidebar">
 
                     <!-- Sidebar > Left -->
-                    <div class="news__page-sidebar--left">
+                    <div class="news__page-sidebar--left test">
 
                         <?php
+                        $first_post = 0;
                         $args = [
                             'post_type'         => 'news',
-                            'orderby'           => 'meta_value',
+                            'orderby'           => 'date',
                             'order'             => 'DESC',
                             'posts_per_page'    => 1,
                         ];
@@ -74,7 +75,7 @@ get_header();
                                             <?php endif; ?>
                                         </a>
                                     </li>
-                                <?php endwhile; wp_reset_postdata(); ?>
+                                <?php $first_post = get_the_ID(); endwhile; wp_reset_postdata(); ?>
 
                             </ul>
                             <!-- End List -->
@@ -223,7 +224,8 @@ get_header();
                             'orderby'           => 'meta_value',
                             'order'             => 'DESC',
                             'posts_per_page'    => 4,
-                            'offset'            => 1,
+                            //'offset'            => 1,
+                            'post__not_in'      => array($first_post),
                         ];
 
                         $loop = new WP_Query($args);
@@ -311,6 +313,7 @@ get_header();
                             'orderby'           => 'meta_value',
                             'order'             => 'DESC',
                             'offset'            => 5,
+                            'post__not_in'      => array($first_post),
                         ];
 
                         $loop = new WP_Query($args);
